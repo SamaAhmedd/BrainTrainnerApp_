@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="160dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#4CAF50"
+        android:clickable="false"
+        android:gravity="center"
+        android:onClick="chooseAnswer"
+        android:tag="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="160dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#1A297C"
+        android:clickable="false"
+        android:gravity="center"
+        android:onClick="chooseAnswer"
+        android:tag="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="160dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#9C27B0"
+        android:clickable="false"
+        android:gravity="center"
+        android:onClick="chooseAnswer"
+        android:tag="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="105dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#D84718"
+        android:gravity="center"
+        android:text="30s"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="110dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#66BDC9"
+        android:gravity="center"
+        android:text="0/0"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="160dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="#D80C0C"
+        android:clickable="false"
+        android:gravity="center"
+        android:onClick="chooseAnswer"
+        android:tag="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerText" />
+
+    <TextView
+        android:id="@+id/equText"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/scoreText"
+        app:layout_constraintStart_toEndOf="@+id/timerText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/doneText"
+        android:layout_width="157dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:gravity="center"
+        android:text="DONE!"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+    <TextView
+        android:id="@+id/correctText"
+        android:layout_width="201dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:gravity="center"
+        android:text="CORRECT"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+    <TextView
+        android:id="@+id/wrongText"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:gravity="center"
+        android:text="WRONG ANSWER"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+    <Button
+        android:id="@+id/tryAgainButton"
+        android:layout_width="148dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:onClick="setNewGame"
+        android:text="Try Again"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doneText" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="159dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_marginBottom="92dp"
+        android:onClick="start"
+        android:text="GO!"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tryAgainButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
